@@ -132,10 +132,9 @@ Full policy: https://vpnstronger.com/ai.txt
 
 ## Access-log facts (ops)
 
-Production SSL log receipt (Zero-DB Audits Parts 5–6): who probes a Zero-DB site, spoofed crawler UAs, and where HTTP 429 fires.
+Zero-DB Audits Parts **5–9**: probes, spoofed UAs / 429, polite feeds, and the **demo_channel** light-RAG assistant lab (claim vs SSL).
 
 → [ACCESS-LOG-FACTS.md](./ACCESS-LOG-FACTS.md)
-
 ```
 
 
