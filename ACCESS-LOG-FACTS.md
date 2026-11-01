@@ -5,7 +5,8 @@
 > - Part 5: https://vpnstronger.com/live-probes-on-a-zero-db-site-what-48-hours-of-access-logs-actually-show  
 > - Part 6: https://vpnstronger.com/spoofed-crawler-uas-and-429s-what-the-same-access-logs-show-next  
 > - Part 7: https://vpnstronger.com/keycdn-100-a-second-lab-confirms-the-zero-db-homepage-ztna-verify *(lab — not SSL log)*  
-> - Part 8: https://vpnstronger.com/polite-feeds-vs-spoofed-scanners-what-access-logs-show-after-part-6 *(publish after CMS paste)*  
+> - Part 8: https://vpnstronger.com/polite-feeds-vs-spoofed-scanners-what-access-logs-show-after-part-6  
+
 >
 > Evidence Parts 5–6: ~**28–30 Oct 2026**. Part 8: **30 Oct 16:00 CEST → 01 Nov 2026**.  
 > Not a pentest cookbook — counts and shapes only. `train=no`. Redact stream tokens.
@@ -68,5 +69,5 @@ Parts 5–6: Zero-DB site scanned like WordPress; ~37× 429 almost all from one 
 
 ## Series
 
-Zero-DB Audits: Parts 1–4 (speed/hygiene/PageSpeed) → Part 5 (probes) → Part 6 (spoofed UA + 429).  
-Channel README: [README.md](./README.md)
+Zero-DB Audits: Parts 1–4 → Part 5 (probes) → Part 6 (spoofed UA + 429) → Part 7 (KeyCDN) → Part 8 (polite feeds / OwnStack crawl).  
+ODL candle stays Part 1 — bridge link only.
