@@ -1,5 +1,4 @@
-# vpnstronger-ai-channel
-Consumer guide for the VPNStronger AI channel — blueprint, light/RAG tiers, policy. Canonical: vpnstronger.com (not the CMS)
+# VPNStronger AI channel (Markdown export)
 
 > **Not canonical.** Live truth is on the site. Refresh hashes and URLs from the blueprint before shipping agents.
 >
@@ -93,7 +92,9 @@ Or header: `X-AI-Policy-Pack: <64-hex>`
 
 Without hash → `403` `policy_denied`.
 
-### Local agent sync (this repo)
+### Local agent sync (operator CMS only — not this GitHub repo)
+
+`tools/agent/sync.php` and `tools/agent/.env` live in the **licensed Zero-DB CMS tree**, not in `vpnstronger-ai-channel` / `vpnstronger-ai-blueprint`. Those public repos are **docs + blueprint mirrors** (`not the CMS`). Public consumers should use HTTP against the live feeds above (curl / own client). Operators who have the CMS:
 
 ```bash
 php tools/agent/sync.php --channel=demo_channel
@@ -130,13 +131,14 @@ Full policy: https://vpnstronger.com/ai.txt
 
 ---
 
-## Access-log facts (ops)
+## Related GitHub (secondary)
 
-Zero-DB Audits Parts **5–9**: probes, spoofed UAs / 429, polite feeds, and the **demo_channel** light-RAG assistant lab (claim vs SSL).
+- https://github.com/zsza83/vpnstronger-ai-blueprint — blueprint contract  
+- https://github.com/zsza83/vpnstronger-ai-channel — this consumer guide  
 
-→ [ACCESS-LOG-FACTS.md](./ACCESS-LOG-FACTS.md)
-```
+Also listed under `channel_guide.github` in the live blueprint and on https://vpnstronger.com/ai#channel  
 
+---
 
 ## Maintenance
 
@@ -146,4 +148,4 @@ When the live channel changes, update this export from:
 2. https://vpnstronger.com/ai-blueprint.json → `channel_guide.summary`  
 3. https://vpnstronger.com/ai.txt → `Channel-Guide`  
 
-CMS path in-repo: `docs/AI-CHANNEL.md`
+Source of this Markdown export inside the CMS tree: `docs/AI-CHANNEL.md`. The GitHub channel README is a secondary copy — refresh from live `/ai#channel` + blueprint when the channel changes.
